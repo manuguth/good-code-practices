@@ -1,0 +1,1 @@
+FROM gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest

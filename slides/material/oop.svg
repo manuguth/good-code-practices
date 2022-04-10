@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="65mm"
+   height="33mm"
+   viewBox="0 0 65 33"
+   version="1.1"
+   id="svg5567"
+   inkscape:version="0.92.4 (unknown)"
+   sodipodi:docname="oop.svg">
+  <defs
+     id="defs5561" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8343933"
+     inkscape:cx="157.8979"
+     inkscape:cy="51.602569"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5564">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-264)">
+    <rect
+       style="opacity:1;fill:#0079ff;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect10044"
+       width="64.970215"
+       height="32.69836"
+       x="-0.012000469"
+       y="264.66373" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:125%;font-family:Paprika;-inkscape-font-specification:Paprika;letter-spacing:-0.02910417px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="2.3986168"
+       y="269.86713"
+       id="text10048"><tspan
+         sodipodi:role="line"
+         id="tspan10046"
+         x="2.3986168"
+         y="269.86713"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:arial;-inkscape-font-specification:arial;fill:#ffffff;stroke-width:0.26458332px">Particle</tspan></text>
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.26458332px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 2.4600839,271.21614 H 62.785638"
+       id="path10054"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:-0.02910417px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="3.1509991"
+       y="280.67465"
+       id="text10142"><tspan
+         sodipodi:role="line"
+         id="tspan10140"
+         x="3.1509991"
+         y="280.67465"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;stroke-width:0.26458332px">- mass</tspan><tspan
+         sodipodi:role="line"
+         x="3.1509991"
+         y="284.20242"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#ffffff;stroke-width:0.26458332px"
+         id="tspan10146">- charge</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';letter-spacing:-0.02910417px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="29.337128"
+       y="276.43359"
+       id="text10152"><tspan
+         sodipodi:role="line"
+         id="tspan10150"
+         x="29.337128"
+         y="276.43359"
+         style="fill:#ffffff;stroke-width:0.26458332px">Actions/Methods</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';letter-spacing:-0.02910417px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="32.542629"
+       y="281.2211"
+       id="text10156"><tspan
+         sodipodi:role="line"
+         id="tspan10154"
+         x="32.542629"
+         y="281.2211"
+         style="fill:#ffffff;stroke-width:0.26458332px">- anti()</tspan><tspan
+         sodipodi:role="line"
+         x="32.542629"
+         y="285.63083"
+         style="fill:#e6e6e6;stroke-width:0.26458332px"
+         id="tspan10160" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944451px;line-height:125%;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:-0.02910417px;word-spacing:0px;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="33.60421"
+       y="284.50052"
+       id="text10169"><tspan
+         sodipodi:role="line"
+         id="tspan10167"
+         x="33.60421"
+         y="284.50052"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#cccccc;stroke-width:0.26458332px"># returns the anti-</tspan><tspan
+         sodipodi:role="line"
+         x="33.60421"
+         y="287.58731"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;fill:#cccccc;stroke-width:0.26458332px"
+         id="tspan10171"># particle of itself</tspan></text>
+    <text
+       id="text10271"
+       y="276.43359"
+       x="2.3496375"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';letter-spacing:-0.02910417px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.26458332px"
+         y="276.43359"
+         x="2.3496375"
+         id="tspan10269"
+         sodipodi:role="line">Properties</tspan></text>
+  </g>
+</svg>
