@@ -10,7 +10,7 @@ The easiest way to run the code for the workshop is using a docker image via
 docker run -it -p 8881:8881  gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest bash
 ```
 
-if you want to make the current folder accessible within the image you need to mount it via `-v $(pwd):<path-to-folder>`
+if you want to make the current folder accessible within the image you need to mount it via `-v $(pwd):<path-to-folder>` and to change the working directory to your current directory you can specify it via `-w $(pwd)`.
 
 To run a Jupyter Notebook within the Docker image, use the following command:
 
