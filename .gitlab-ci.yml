@@ -1,0 +1,54 @@
+stages:
+  - test
+  - build
+  - post_test
+  - post_test_integration
+
+doxec:
+  image: python:3
+  stage: test
+  script:
+    - pip install doxec numpy
+    - doxec *.md
+
+build_image:
+  stage: build
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    DOCKER_FILE: Dockerfile
+    TAG: latest
+    IMAGE_NAME: base-python
+  except:
+    - tags
+  image:
+      name: gitlab-registry.cern.ch/ci-tools/docker-image-builder
+      entrypoint: [""]
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/${DOCKER_FILE} --destination ${CI_REGISTRY_IMAGE}/${IMAGE_NAME}:${TAG}
+    - echo "Image \"$SUBDIRECTORY\" successfully built with destination flag ${CI_REGISTRY_IMAGE}/${IMAGE_NAME}:${TAG}"
+  when: manual
+
+unit_test_palindrome:
+  image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
+  stage: post_test
+  script:
+    - cd python-testing
+    - pytest test_palindrome.py -v
+  # the allow_failure option needs to be removed
+  allow_failure: True
+
+# unit_test_mymodule:
+#   image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
+#   stage: post_test
+#   script:
+#     - echo "add here your script"
+
+# integration_test_mymodule:
+#   image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
+#   stage: post_test_integration
+#   script:
+#     - echo "add here your script"
+#   artifacts:
+#     paths:
+#       - plot.pdf
