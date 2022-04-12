@@ -19,11 +19,11 @@ RUN \
   pip3 install --upgrade pip && \
   pip3 install -r requirements.txt
 
-RUN useradd -m rodem
-COPY . /home/rodem
-RUN chown -R rodem:rodem /home/rodem
-USER rodem
-WORKDIR /home/rodem
+RUN useradd -m ftag
+COPY . /home/ftag
+RUN chown -R ftag:ftag /home/ftag
+USER ftag
+WORKDIR /home/ftag
 
 CMD /bin/bash
 
