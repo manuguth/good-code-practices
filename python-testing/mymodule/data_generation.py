@@ -29,10 +29,10 @@ def generate_data(dist: str, size: int, seed: int=None, **kwargs):
         https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal
         https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.exponential
     """
-    logging.info(f"Generating {size} data points for {dist} distribution.")
+    logging.info("Generating %i data points for %s distribution.", size, dist)
 
     # generate data_set here for the 2 different distributions
     data_set = None
 
-    logging.debug(f"Used the seed {seed}.")
+    logging.debug("Used the seed %i.", seed)
     return data_set

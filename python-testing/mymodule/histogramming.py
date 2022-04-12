@@ -3,10 +3,13 @@ Filling histograms with the generated data and calculate stat. uncertainties
 """
 from itertools import pairwise
 import logging
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
 
-class histogram:
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+
+class Histogram:
     """
     Histogram class
 
@@ -38,10 +41,13 @@ class histogram:
             norming the histogram to integral 1 (default: False)
         """
         self.binning = binning
-        logging.debug(f"Initialised binning {self.binning}")
+        logging.debug("Initialised binning %s", self.binning)
         self.normed = normed
-        logging.debug(f"Setting norm option to {self.normed}")
+        logging.debug("Setting norm option to %s", self.normed)
         self.norm_value = None
+        self.counts = None
+        self.bin_edges = None
+        self.unc = None
 
     def __call__(self, data_set):
         """
@@ -76,6 +82,4 @@ class histogram:
         # calculate stat. unc. here - use Poisson unc.
 
         self.unc = None
-        logging.debug(f"Uncertainties are given by {self.unc}.")
-
-
+        logging.debug("Uncertainties are given by %f.", self.unc)

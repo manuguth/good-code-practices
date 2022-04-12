@@ -1,10 +1,13 @@
 """
 Plotting the histograms created in the histogram step.
 """
-import matplotlib.pyplot as plt
 import logging
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+import matplotlib.pyplot as plt
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 def plot_histogram(hist):
     """
@@ -18,12 +21,13 @@ def plot_histogram(hist):
     -----
     plot as pdf
     """
-    logging.info(f"Start plotting histogram.")
+    logging.info("Start plotting histogram.")
     fig = plt.figure(figsize=(8, 5.5), constrained_layout=True)
-    ax = fig.gca()
+    axis = fig.gca()
     band_lower = hist.counts - hist.get_unc
 
     # add here your solution for plotting
 
-    logging.info(f"Saved plot as {file_name}.")
+    file_name = "histo.pdf"
+    logging.info("Saved plot as %s.", file_name)
     plt.clf()
