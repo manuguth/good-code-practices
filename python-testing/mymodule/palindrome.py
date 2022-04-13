@@ -2,16 +2,17 @@
 
 
 def is_palindrome(name: str) -> bool:
-    """Check if an expression is a palindrome.
+    """Check if input is a palindrome.
 
     Parameters
     ----------
-    name: expression to be checked
+    name : str
+        Name to check
 
     Returns
     -------
-    is_panlindrom: boolean expression stating if name is palindrome
-
+    bool
+        True if name was palindrome else False
     """
     reversed_name = name[::-1]
     if reversed_name == name:
