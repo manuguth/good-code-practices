@@ -6,6 +6,7 @@ from mymodule import generate_data, Histogram, plot_histogram
 # unit tests of the generate_data function #
 ############################################
 
+
 # check for raised errors
 def test_generate_data_value_error_dist():
     assert True
@@ -37,6 +38,6 @@ def example_data_set():
 
 
 def test_histogram_one_bin(example_data_set):
-    hist = histogram(1)
+    hist = Histogram(1)
     counts, bins = hist(example_data_set)
     assert True

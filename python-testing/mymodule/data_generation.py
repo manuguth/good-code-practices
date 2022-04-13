@@ -6,13 +6,14 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def generate_data(dist: str, size: int, seed: int=None, **kwargs):
+def generate_data(dist: str, size: int, seed: int = None, **kwargs):
     """
     Parameters
     ----------
     dist : str
         possible distributions which are generated (either normal or exp)
-    seize : int
+    size : int
+        size of generated data
     seed : int
         random seed to make the generation reproducable
     kwargs :

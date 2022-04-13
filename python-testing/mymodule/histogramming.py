@@ -1,7 +1,5 @@
-"""
-Filling histograms with the generated data and calculate stat. uncertainties
-"""
-from itertools import pairwise
+"""Filling histograms with generated data and calculate stat. uncertainties."""
+# from itertools import pairwise
 import logging
 
 logging.basicConfig(

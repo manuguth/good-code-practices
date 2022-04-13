@@ -1,6 +1,7 @@
 from mymodule import is_palindrome
 import pytest
 
+
 @pytest.mark.parametrize("maybe_palindrome, expected_result", [
     ("", True),
     ("a", True),

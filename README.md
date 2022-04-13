@@ -6,6 +6,14 @@
 
 The easiest way to run the code for the workshop is using a docker image via
 
+
+Running with Docker
+```bash
+docker run -it -v $(pwd):$(pwd) -w $(pwd)  gitlab-registry.cern.ch/mguth/good-code-practices/base-python:latest bash
+```
+
+If you want to use `jupyter notebook`
+
 ```bash
 docker run -it -p 8881:8881  gitlab-registry.cern.ch/mguth/good-code-practices/base-python:latest bash
 ```
@@ -20,7 +28,16 @@ jupyter notebook --ip 0.0.0.0 --no-browser --port 8881
 
 ### Singularity
 
-Using singularity you can simply run
+Using singularity, first pull the image to a location where you have some space available
+```bash
+singularity pull good-code-practices.sif docker://gitlab-registry.cern.ch/mguth/good-code-practices/base-python:latest
+```
+then you can start the singularity image
+```bash
+singularity shell good-code-practices.sif
+```
+
+Or alternatively if you want to use jupyter
 
 ```bash
 singularity exec --pwd ${PWD} docker://gitlab-registry.cern.ch/mguth/good-code-practices/base-python:latest jupyter notebook --no-browser --port 8871
