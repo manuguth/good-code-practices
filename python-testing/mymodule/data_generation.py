@@ -2,8 +2,11 @@
 Generating data using a random seed and a distribution argument
 """
 import logging
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+import numpy as np
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 
 def generate_data(dist: str, size: int, seed: int = None, **kwargs):
@@ -31,9 +34,19 @@ def generate_data(dist: str, size: int, seed: int = None, **kwargs):
         https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.exponential
     """
     logging.info("Generating %i data points for %s distribution.", size, dist)
-
-    # generate data_set here for the 2 different distributions
-    data_set = None
+    if dist == "normal":
+        # possible kwargs: loc (mean), scale (standard deviation)
+        data_set = np.random.default_rng(seed=seed).normal(size=size, **kwargs)
+    elif dist == "exp":
+        # possible kwargs: scale
+        data_set = np.random.default_rng(seed=seed).exponential(
+            size=size, **kwargs
+            )
+    else:
+        raise ValueError(
+            f"Specified '{dist}' as `dist` parameter, but only "
+            "'normal' or 'exp' are supported"
+        )
 
     logging.debug("Used the seed %i.", seed)
     return data_set

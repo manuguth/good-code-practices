@@ -9,14 +9,14 @@ logging.basicConfig(
 )
 
 
-def plot_histogram(hist):
+def plot_histogram(hist, file_name: str):
     """
     Parameters
     ----------
-    np_hist :   numpy histogram
-                a 1D numpy histogram which should be plotted
-    plot_args : dict
-                arguments controling the plotting style
+    hist : numpy histograma
+        1D numpy histogram which should be plotted
+    file_name : str
+        name of the output file
     Saves
     -----
     plot as pdf
@@ -26,8 +26,32 @@ def plot_histogram(hist):
     axis = fig.gca()
     band_lower = hist.counts - hist.get_unc
 
-    # add here your solution for plotting
+    plt.hist(
+        hist.bin_edges[:-1],
+        hist.bin_edges,
+        weights=hist.counts,
+        histtype="step",
+        linewidth=2.0,
+        color="#1f77b4",
+        stacked=False,
+        fill=False,
+    )
+    plt.hist(
+        hist.bincentres,
+        bins=hist.bin_edges,
+        bottom=band_lower,
+        weights=hist.unc * 2,
+        fill=False,
+        hatch="/////",
+        linewidth=0,
+        edgecolor="#666666",
+        label="stat. unc.",
+    )
+    plt.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
+    axis.legend(loc="upper right")
+    plt.xlabel("entries", horizontalalignment="right", x=1.0)
+    plt.ylabel("a.u.", horizontalalignment="right", y=1.0)
 
-    file_name = "histo.pdf"
+    plt.savefig(file_name, transparent=True)
     logging.info("Saved plot as %s.", file_name)
     plt.clf()
