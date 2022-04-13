@@ -51,7 +51,7 @@ integration_test_mymodule:
   script:
     - cd python-testing
     - python integration_test_my_module.py
-    - cp plot.pdf ../.
+    - cp *.pdf ../.
   artifacts:
     paths:
-      - plot.pdf
+      - "*.pdf"
