@@ -14,7 +14,7 @@ def is_palindrome(name: str) -> bool:
     -------
     is_panlindrom: boolean expression stating if name is palindrome
     """
-    if type(name) is not str:
+    if not isinstance(name, str):
         raise TypeError("Only strings are accepted")
     name = re.sub(r"\W+", "", name).replace(" ", "")
     reversed_name = name[::-1]

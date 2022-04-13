@@ -1,5 +1,6 @@
-from mymodule import is_palindrome
+"""Unit tests of palindrome."""
 import pytest
+from mymodule import is_palindrome
 
 
 @pytest.mark.parametrize(
@@ -16,10 +17,12 @@ import pytest
     ],
 )
 def test_is_palindrome(maybe_palindrome, expected_result):
+    """Check the examples given in pytest.mark.parametrize."""
     assert is_palindrome(maybe_palindrome) == expected_result
 
 
 def test_fails_no_string():
+    """Checks if error is raised if no string is provided."""
     with pytest.raises(TypeError) as e_info:
         is_palindrome(22)
     assert str(e_info.value) == "Only strings are accepted"
