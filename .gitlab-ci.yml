@@ -38,17 +38,20 @@ unit_test_palindrome:
   # the allow_failure option needs to be removed
   allow_failure: True
 
-# unit_test_mymodule:
-#   image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
-#   stage: post_test
-#   script:
-#     - echo "add here your script"
+unit_test_mymodule:
+  image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
+  stage: post_test
+  script:
+    - cd python-testing
+    - pytest test_unit_mymodule.py -v
 
-# integration_test_mymodule:
-#   image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
-#   stage: post_test_integration
-#   script:
-#     - echo "add here your script"
-#   artifacts:
-#     paths:
-#       - plot.pdf
+integration_test_mymodule:
+  image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
+  stage: post_test_integration
+  script:
+    - cd python-testing
+    - python integration_test_my_module.py
+    - cp plot.pdf ../.
+  artifacts:
+    paths:
+      - plot.pdf
