@@ -35,8 +35,7 @@ unit_test_palindrome:
   script:
     - cd python-testing
     - pytest test_palindrome.py -v
-  # the allow_failure option needs to be removed
-  allow_failure: True
+
 
 # unit_test_mymodule:
 #   image: gitlab-registry.cern.ch/rodem-workshops/rodem-good-practices/base-python:latest
