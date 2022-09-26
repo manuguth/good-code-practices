@@ -4,6 +4,9 @@ This tutorial is supposed to give a short overview on general good code practice
 
 It is partially based in the tutorial already given my Frank Sauerburger and me (Manuel Guth) in the [GRK python workshop](https://indico.cern.ch/event/846501/timetable/?view=standard).
 
+You can find the corresponding slides for this tutorial in the folder [`slides`](./slides).
+
+**This repository is adapted for the gitlab CI/CD and was moved after the tutorial to this location and it is not yet optimised for github.**
 
 ## Installation
 
