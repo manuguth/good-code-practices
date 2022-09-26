@@ -1,5 +1,10 @@
 # Good Code Practices
 
+This tutorial is supposed to give a short overview on general good code practices in python.
+
+It is partially based in the tutorial already given my Frank Sauerburger and me (Manuel Guth) in the [GRK python workshop](https://indico.cern.ch/event/846501/timetable/?view=standard).
+
+
 ## Installation
 
 ### Docker
