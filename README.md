@@ -1,4 +1,4 @@
-# Rodem Good Practices
+# Good Code Practices
 
 ## Installation
 
